@@ -41,6 +41,18 @@ class App extends Component {
     containerStyle: null
   };
 
+  componentDidMount = () => {
+    try {
+      if (localStorage.getItem("topScore")) {
+        this.setState({ topScore: Number(localStorage.getItem("topScore")) });
+      }
+      return true;
+    } catch (e) {
+      this.setState({ topScore: 0 });
+      return false;
+    }
+  };
+
   shuffleArrays = arr => {
     for (let i = arr.length - 1; i > 0; i--) {
       let j = Math.floor(Math.random() * (i + 1));
@@ -71,6 +83,7 @@ class App extends Component {
         guessedColors: this.state.guessedColors.concat(name),
         containerStyle: null
       });
+      this.shuffleColors();
       if (this.state.messageColor === "green1") {
         this.setState({
           message: <h5 style={styles.flashGreen2}>You guessed correctly!</h5>,
@@ -82,12 +95,17 @@ class App extends Component {
           messageColor: "green1"
         });
       }
-      if (this.state.score === this.state.topScore) {
+      if (this.state.score >= this.state.topScore) {
         this.setState({
           topScore: this.state.topScore + 1
         });
+        try {
+          localStorage.setItem("topScore", this.state.topScore + 1);
+          return true;
+        } catch (e) {
+          return false;
+        }
       }
-      this.shuffleColors();
     }
   };
 
@@ -104,7 +122,7 @@ class App extends Component {
               </p>
             </div>
           </div>
-          <div className="row text-center pt-3" id="scores">
+          <div className="row text-center py-3" id="scores">
             <div className="col-2"></div>
             <div className="col-3">
               <h4>Score: {this.state.score}</h4>
@@ -119,7 +137,7 @@ class App extends Component {
           <div className="row" style={this.state.containerStyle}>
             {this.state.colors.map(color => {
               return (
-                <div className="col-3 p-3" key={color.name}>
+                <div className="col-4 col-md-3 text-center" key={color.name}>
                   <input
                     type="image"
                     src={color.image}
