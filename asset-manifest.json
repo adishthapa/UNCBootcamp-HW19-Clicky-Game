@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/UNCBootcamp-HW19-Clicky-Game/static/css/main.ecdc8087.chunk.css",
+    "main.js": "/UNCBootcamp-HW19-Clicky-Game/static/js/main.5c4adc8d.chunk.js",
+    "main.js.map": "/UNCBootcamp-HW19-Clicky-Game/static/js/main.5c4adc8d.chunk.js.map",
+    "runtime-main.js": "/UNCBootcamp-HW19-Clicky-Game/static/js/runtime-main.d39ab6a3.js",
+    "runtime-main.js.map": "/UNCBootcamp-HW19-Clicky-Game/static/js/runtime-main.d39ab6a3.js.map",
+    "static/js/2.4fe49865.chunk.js": "/UNCBootcamp-HW19-Clicky-Game/static/js/2.4fe49865.chunk.js",
+    "static/js/2.4fe49865.chunk.js.map": "/UNCBootcamp-HW19-Clicky-Game/static/js/2.4fe49865.chunk.js.map",
+    "index.html": "/UNCBootcamp-HW19-Clicky-Game/index.html",
+    "precache-manifest.a7c910b5c1d1a143b60d62df5cd46e5d.js": "/UNCBootcamp-HW19-Clicky-Game/precache-manifest.a7c910b5c1d1a143b60d62df5cd46e5d.js",
+    "service-worker.js": "/UNCBootcamp-HW19-Clicky-Game/service-worker.js",
+    "static/css/main.ecdc8087.chunk.css.map": "/UNCBootcamp-HW19-Clicky-Game/static/css/main.ecdc8087.chunk.css.map"
+  }
+}
