@@ -1,0 +1,62 @@
+[
+  {
+    "id": 1,
+    "name": "Azure",
+    "image": "../images/azure.png"
+  },
+  {
+    "id": 2,
+    "name": "Blue",
+    "image": "../images/blue.png"
+  },
+  {
+    "id": 3,
+    "name": "Chartreuse",
+    "image": "../images/chartreuse.png"
+  },
+  {
+    "id": 4,
+    "name": "Cyan",
+    "image": "../images/cyan.png"
+  },
+  {
+    "id": 5,
+    "name": "Green",
+    "image": "../images/green.png"
+  },
+  {
+    "id": 6,
+    "name": "Magenta",
+    "image": "../images/magenta.png"
+  },
+  {
+    "id": 7,
+    "name": "Orange",
+    "image": "../images/orange.png"
+  },
+  {
+    "id": 8,
+    "name": "Red",
+    "image": "../images/red.png"
+  },
+  {
+    "id": 9,
+    "name": "Rose",
+    "image": "../images/rose.png"
+  },
+  {
+    "id": 10,
+    "name": "Spring Green",
+    "image": "../images/spring-green.png"
+  },
+  {
+    "id": 11,
+    "name": "Violet",
+    "image": "../images/violet.png"
+  },
+  {
+    "id": 12,
+    "name": "Yellow",
+    "image": "../images/yellow.png"
+  }
+]

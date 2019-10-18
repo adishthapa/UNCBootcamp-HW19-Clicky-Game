@@ -20,3 +20,11 @@
 .App-link {
   color: #09d3ac;
 }
+
+#directions {
+  border-bottom: 3px solid black;
+}
+
+#colorImg {
+  padding: 0;
+}
