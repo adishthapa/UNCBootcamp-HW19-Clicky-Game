@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/UNCBootcamp-HW19-Clicky-Game/precache-manifest.a7c910b5c1d1a143b60d62df5cd46e5d.js"
+  "/UNCBootcamp-HW19-Clicky-Game/precache-manifest.cda3a8ae0b104acecc65bf278223c7ab.js"
 );
 
 self.addEventListener('message', (event) => {
