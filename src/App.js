@@ -1,6 +1,34 @@
 import React, { Component } from "react";
+import { bounce, flash, shake } from "react-animations";
+import Radium, { StyleRoot } from "radium";
 import "./App.css";
 import colors from "./colors.json";
+
+const styles = {
+  bounce: {
+    animation: "x 1s",
+    animationName: Radium.keyframes(bounce, "bounce")
+  },
+  flashRed: {
+    animation: "x 1s",
+    color: "red",
+    animationName: Radium.keyframes(flash, "flashRed")
+  },
+  flashGreen1: {
+    animation: "x 1s",
+    color: "green",
+    animationName: Radium.keyframes(flash, "flashGreen1")
+  },
+  flashGreen2: {
+    animation: "x 1s",
+    color: "green",
+    animationName: Radium.keyframes(flash, "flashGreen2")
+  },
+  shake: {
+    animation: "x .75s",
+    animationName: Radium.keyframes(shake, "shake")
+  }
+};
 
 class App extends Component {
   state = {
@@ -8,7 +36,9 @@ class App extends Component {
     topScore: 0,
     colors: colors,
     guessedColors: [],
-    message: <h5>Click an image to begin!</h5>
+    message: <h5>Click an image to begin!</h5>,
+    messageColor: "",
+    containerStyle: null
   };
 
   shuffleArrays = arr => {
@@ -32,14 +62,26 @@ class App extends Component {
       this.setState({
         score: 0,
         guessedColors: [],
-        message: <h5>You guessed incorrectly!</h5>
+        message: <h5 style={styles.flashRed}>You guessed incorrectly!</h5>,
+        containerStyle: styles.shake
       });
     } else {
       this.setState({
         score: this.state.score + 1,
         guessedColors: this.state.guessedColors.concat(name),
-        message: <h5>You guessed correctly!</h5>
+        containerStyle: null
       });
+      if (this.state.messageColor === "green1") {
+        this.setState({
+          message: <h5 style={styles.flashGreen2}>You guessed correctly!</h5>,
+          messageColor: "green2"
+        });
+      } else {
+        this.setState({
+          message: <h5 style={styles.flashGreen1}>You guessed correctly!</h5>,
+          messageColor: "green1"
+        });
+      }
       if (this.state.score === this.state.topScore) {
         this.setState({
           topScore: this.state.topScore + 1
@@ -51,7 +93,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <StyleRoot>
         <div className="container-fluid">
           <div className="row text-center pt-4 pb-2" id="directions">
             <div className="col-12">
@@ -74,7 +116,7 @@ class App extends Component {
             <div className="col-2"></div>
             <div className="col-12">{this.state.message}</div>
           </div>
-          <div className="row">
+          <div className="row" style={this.state.containerStyle}>
             {this.state.colors.map(color => {
               return (
                 <div className="col-3 p-3" key={color.name}>
@@ -91,7 +133,7 @@ class App extends Component {
             })}
           </div>
         </div>
-      </div>
+      </StyleRoot>
     );
   }
 }
