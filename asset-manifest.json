@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/UNCBootcamp-HW19-Clicky-Game/static/css/main.ecdc8087.chunk.css",
-    "main.js": "/UNCBootcamp-HW19-Clicky-Game/static/js/main.38eba5b8.chunk.js",
-    "main.js.map": "/UNCBootcamp-HW19-Clicky-Game/static/js/main.38eba5b8.chunk.js.map",
-    "runtime-main.js": "/UNCBootcamp-HW19-Clicky-Game/static/js/runtime-main.d39ab6a3.js",
-    "runtime-main.js.map": "/UNCBootcamp-HW19-Clicky-Game/static/js/runtime-main.d39ab6a3.js.map",
-    "static/js/2.4fe49865.chunk.js": "/UNCBootcamp-HW19-Clicky-Game/static/js/2.4fe49865.chunk.js",
-    "static/js/2.4fe49865.chunk.js.map": "/UNCBootcamp-HW19-Clicky-Game/static/js/2.4fe49865.chunk.js.map",
-    "index.html": "/UNCBootcamp-HW19-Clicky-Game/index.html",
-    "precache-manifest.cda3a8ae0b104acecc65bf278223c7ab.js": "/UNCBootcamp-HW19-Clicky-Game/precache-manifest.cda3a8ae0b104acecc65bf278223c7ab.js",
-    "service-worker.js": "/UNCBootcamp-HW19-Clicky-Game/service-worker.js",
-    "static/css/main.ecdc8087.chunk.css.map": "/UNCBootcamp-HW19-Clicky-Game/static/css/main.ecdc8087.chunk.css.map"
+    "main.css": "/colors-clicky-game/static/css/main.ecdc8087.chunk.css",
+    "main.js": "/colors-clicky-game/static/js/main.f920947a.chunk.js",
+    "main.js.map": "/colors-clicky-game/static/js/main.f920947a.chunk.js.map",
+    "runtime-main.js": "/colors-clicky-game/static/js/runtime-main.5d078609.js",
+    "runtime-main.js.map": "/colors-clicky-game/static/js/runtime-main.5d078609.js.map",
+    "static/js/2.4fe49865.chunk.js": "/colors-clicky-game/static/js/2.4fe49865.chunk.js",
+    "static/js/2.4fe49865.chunk.js.map": "/colors-clicky-game/static/js/2.4fe49865.chunk.js.map",
+    "index.html": "/colors-clicky-game/index.html",
+    "precache-manifest.c7f9506ea775dd5e35f235399531dd91.js": "/colors-clicky-game/precache-manifest.c7f9506ea775dd5e35f235399531dd91.js",
+    "service-worker.js": "/colors-clicky-game/service-worker.js",
+    "static/css/main.ecdc8087.chunk.css.map": "/colors-clicky-game/static/css/main.ecdc8087.chunk.css.map"
   }
 }
