@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://adishthapa.com/colors-clicky-game",
   "dependencies": {
-    "gh-pages": "^2.1.1",
+    "gh-pages": "^5.0.0",
     "radium": "^0.26.0",
     "react": "^16.9.0",
     "react-animations": "^1.0.0",
